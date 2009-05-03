@@ -1,0 +1,5 @@
+app-admin/gnome-system-tools
+app-admin/system-config-printer
+dev-libs/liboobs
+app-admin/system-tools-backends
+x11-libs/xcb-util
