@@ -21,3 +21,4 @@ dev-libs/liblinebreak
 dev-libs/liboobs
 app-admin/system-tools-backends
 dev-perl/Net-DBus
+x11-apps/notify-osd
