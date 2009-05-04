@@ -22,3 +22,5 @@ dev-libs/liboobs
 app-admin/system-tools-backends
 dev-perl/Net-DBus
 x11-apps/notify-osd
+x11-themes/human-icon-theme
+x11-themes/human-theme
