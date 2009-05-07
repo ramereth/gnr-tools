@@ -24,3 +24,7 @@ dev-perl/Net-DBus
 x11-apps/notify-osd
 x11-themes/human-icon-theme
 x11-themes/human-theme
+gnome-extra/gnome-power-manager
+sys-apps/hal
+gnome-extra/policykit-gnome
+sys-auth/consolekit
