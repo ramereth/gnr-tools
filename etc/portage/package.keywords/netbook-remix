@@ -28,3 +28,5 @@ gnome-extra/gnome-power-manager
 sys-apps/hal
 gnome-extra/policykit-gnome
 sys-auth/consolekit
+net-misc/networkmanager
+gnome-extra/nm-applet

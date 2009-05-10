@@ -1,3 +1,6 @@
 app-text/fbreader gtk -qt4
-net-dns/avahi qt3
-sys-apps/hal -laptop
+net-dns/avahi qt3 autoipd
+sys-apps/hal consolekit
+gnome-base/gnome-applets -apm
+sys-power/pm-utils networkmanager ntp
+net-misc/networkmanager avahi dhcpcd gnutls
