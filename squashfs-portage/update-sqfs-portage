@@ -1,0 +1,23 @@
+#!/bin/bash
+# Copyright 2009 Lance Albertson
+# Distributed under the terms of the GNU General Public License v2
+
+# Grab squashfs image from remote host, mount it, and redo the metadata
+
+. /etc/make.conf
+
+set -x
+
+IN=${GENTOO_SQUASHFS_MIRROR}/portage-latest.sqfs
+OUT=/usr/portage.sqfs
+TMP=/dev/shm/portage.sqfs
+
+wget -O ${TMP} ${IN}
+
+# umount stuff
+umount /usr/portage
+
+# update the file
+mv ${TMP} ${OUT}
+mount /usr/portage
+emerge --metadata

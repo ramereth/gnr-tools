@@ -1,0 +1,41 @@
+#!/bin/bash
+# Copyright 2009 Lance Albertson
+# Distributed under the terms of the GNU General Public License v2
+
+# Pull latest Gentoo snapshot image and create a squashfs image of it.
+# Other features:
+#  * update portage-utils cache
+#  * update metadata on chroots
+
+# source /etc/make.conf to make sure we get settings
+. /etc/make.conf
+#set -x
+IN=/dev/shm
+OUT=/var/www/localhost/htdocs/snapshots
+
+# Mounted volumes
+MOUNTS="/data/chroots/netbook/usr/portage"
+export PORTDIR=${IN}/portage
+
+mkdir -p ${IN}/portage
+wget -q -O - "${GENTOO_MIRRORS}"/snapshots/portage-latest.tar.bz2 | tar xpjf - -C ${IN}
+# make some direstories we need so we can mount stuff
+mkdir -p ${IN}/portage/packages ${IN}/portage/distfiles
+# make portage-utils cache
+/usr/bin/q -qr
+/usr/bin/q -qm
+
+for mount in ${MOUNTS} ; do
+   umount ${mount}
+done
+
+mksquashfs ${IN}/portage ${OUT}/portage-latest.sqfs -no-progress -noappend > /dev/null
+rm -rf ${IN}/portage
+chmod 644 ${OUT}/portage-latest.sqfs
+
+for mount in ${MOUNTS} ; do
+   mount ${mount}
+done
+
+# Update metadata for chroot 
+#/usr/bin/linux32 chname netbook chroot /data/chroots/netbook /usr/bin/emerge --metadata -q
