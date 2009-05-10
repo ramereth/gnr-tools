@@ -1,0 +1,35 @@
+CFLAGS="-march=pentium4 -O2 -pipe -fomit-frame-pointer"
+CXXFLAGS="-O2 -mtune=i686 -pipe"
+CHOST="i686-pc-linux-gnu"
+
+USE_DENY="-nls"
+USE="xscreensaver samba mad pulseaudio gnome-keyring usb nautilus applet
+gstreamer fam cairo apm laptop acpi xulrunner nsplugin mdnsresponder-compat
+avahi qt4 spell directfb alsa xv dga mpeg mmx sse ssse3 aac amrnb aspell
+automount bluetooth bonjour branding bzip2 cpudetection daap dirac dvi exif
+ffmpeg flac flash gs id3tag imagemagick imlib kde gnome libnotify live lzo
+mhash mmap pango policykit real taglib t1lib twolam upnp v4l v4l2 vnc xft
+gnutls threads opengl gtk pic sdl png dbus truetype svg jpeg tiff hal xcb X
+bash-completion vim-syntax $USE_DENY"
+
+# Enable parallel fetches for packages while installing
+FEATURES="$FEATURES parallel-fetch"
+
+# Enable on chroot build host
+# FEATURES="$FEATURES buildpkg"
+
+# Local portage repository
+GENTOO_MIRRORS="http://gentoo.osuosl.org/"
+
+# Squashfs mirror
+#GENTOO_SQUASHFS_MIRROR="http://example.org/snapshots"
+
+# Package binary host
+#PORTAGE_BINHOST="http://example.org/packages/"
+
+INPUT_DEVICES="evdev synaptics keyboard mouse"
+VIDEO_CARDS="intel"
+
+LINGUAS="en_US"
+
+# vim: ft=gentoo-make-conf :
