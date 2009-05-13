@@ -1,6 +1,24 @@
+#net-print/cups avahi
+app-laptop/laptop-mode-tools -apm
+app-portage/eix sqlite
 app-text/fbreader gtk -qt4
+dev-util/git subversion cvs tk
 gnome-base/gnome-applets -apm
+mail-client/mutt imap mbox sasl sidebar smime smtp idn gpgme nls
+media-libs/imlib2 mp3
+media-sound/audacity mp3 twolame vamp
+media-sound/rhythmbox ipod musicbrainz tagwriting
+media-video/mplayer directfb dv pvr quicktime radio win32codecs x264 xvid
+net-analyzer/mtr -gtk
 net-dns/avahi qt3 autoipd
+net-im/pidgin gstreamer prediction sasl
 net-misc/networkmanager avahi dhcpcd gnutls
+net-misc/tightvnc server
 sys-apps/hal consolekit
+sys-boot/boot-utils build-kernel
+sys-devel/gcc -gtk
 sys-power/pm-utils networkmanager ntp
+www-plugins/mplayerplug-in divx firefox quicktime
+x11-libs/qt qt3support
+xfce-base/xfce4 minimal
+xfce-base/xfwm4 xcomposite
