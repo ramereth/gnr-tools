@@ -1,0 +1,5 @@
+dev-libs/DirectFB -sdl
+gnome-base/gnome-applets -apm
+net-dns/avahi -gtk
+net-misc/networkmanager dhcpcd resolvconf
+net-misc/vinagre -avahi
