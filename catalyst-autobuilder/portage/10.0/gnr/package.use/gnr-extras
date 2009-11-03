@@ -1,0 +1,3 @@
+media-sound/rhythmbox ipod
+net-analyzer/wireshark geoip
+net-misc/ntp -zeroconf
