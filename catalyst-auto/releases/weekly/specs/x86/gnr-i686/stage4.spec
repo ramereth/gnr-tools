@@ -54,3 +54,5 @@ stage4/use:
 
 stage4/packages:
     virtual/gentoo-netbook-remix
+
+stage4/overlay: /data/git/gnr-overlay

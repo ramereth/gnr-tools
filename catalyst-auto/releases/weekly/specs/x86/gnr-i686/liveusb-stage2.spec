@@ -17,7 +17,7 @@ livecd/volid: Gentoo Linux (Gentoo Netbook Remix) 10.0 x86 LiveUSB
 livecd/xdm: gdm
 livecd/xsession: gnome
 
-#livecd/overlay: /home/agaffney/release/10.0/overlays/common/overlay/livecd
+livecd/overlay: /data/git/gnr-overlay
 #livecd/root_overlay: /home/agaffney/release/10.0/overlays/common/root_overlay
 
 boot/kernel: gentoo

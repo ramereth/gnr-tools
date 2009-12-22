@@ -5,6 +5,7 @@ rel_type: default
 profile: default/linux/x86/10.0/desktop
 snapshot: 10.0
 source_subpath: default/stage3-i686-gnr-10.0
+livecd/overlay: /data/git/gnr-overlay
 livecd/use:
     branding
     livecd
@@ -55,5 +56,6 @@ livecd/use:
     aspell
     -cdr
     -dvdr
+
 livecd/packages:
     virtual/gentoo-netbook-remix
