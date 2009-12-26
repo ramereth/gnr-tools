@@ -1,0 +1,9 @@
+#!/bin/bash
+# Uncomment the following to increase the number of threads used to compile.
+export MAKEOPTS="-j4"
+# quiet downloads
+export FETCHCOMMAND="/usr/bin/wget -t 5 -T 60 -nv --passive-ftp -O \${DISTDIR}/\${FILE} \${URI}"
+export RESUMECOMMAND="/usr/bin/wget -c -t 5 -T 60 -nv --passive-ftp -O \${DISTDIR}/\${FILE} \${URI}"
+# Use OSL mirror
+export GENTOO_MIRRORS="http://gentoo.osuosl.org/"
+
