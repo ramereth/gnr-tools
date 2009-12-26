@@ -5,6 +5,7 @@ rel_type: default
 profile: default/linux/x86/10.0/desktop
 snapshot: 10.0
 source_subpath: default/liveusb-stage1-i686-installer-10.0
+portage_confdir: /data/gnr-tools/etc/portage
 
 livecd/bootargs: dokeymap
 livecd/cdtar: /usr/lib/catalyst/livecd/cdtar/isolinux-elilo-memtest86+-cdtar.tar.bz2
@@ -17,7 +18,7 @@ livecd/volid: Gentoo Linux (Gentoo Netbook Remix) 10.0 x86 LiveUSB
 livecd/xdm: gdm
 livecd/xsession: gnome
 
-livecd/overlay: /data/git/gnr-overlay
+livecd/overlay: /data/gnr-overlay
 #livecd/root_overlay: /home/agaffney/release/10.0/overlays/common/root_overlay
 
 boot/kernel: gentoo

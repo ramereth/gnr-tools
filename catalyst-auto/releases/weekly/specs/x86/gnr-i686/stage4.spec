@@ -4,6 +4,7 @@ version_stamp: gnr-10.0
 rel_type: default
 profile: default/linux/x86/10.0/desktop
 snapshot: 10.0
+portage_confdir: /data/gnr-tools/etc/portage
 
 stage4/use:
     consolekit
@@ -55,4 +56,4 @@ stage4/use:
 stage4/packages:
     virtual/gentoo-netbook-remix
 
-stage4/overlay: /data/git/gnr-overlay
+stage4/overlay: /data/gnr-overlay
