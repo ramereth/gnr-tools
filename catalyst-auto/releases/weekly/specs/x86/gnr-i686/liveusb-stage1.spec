@@ -4,7 +4,7 @@ target: livecd-stage1
 rel_type: default
 profile: default/linux/x86/10.0/desktop
 snapshot: 10.0
-source_subpath: default/stage3-i686-gnr-10.0
+source_subpath: default/system-i686-gnr-10.0
 portage_confdir: /data/gnr-tools/etc/portage
 livecd/overlay: /data/gnr-overlay
 livecd/use:
