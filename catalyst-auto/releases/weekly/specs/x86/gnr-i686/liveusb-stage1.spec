@@ -6,7 +6,8 @@ profile: default/linux/x86/10.0/desktop
 snapshot: 10.0
 source_subpath: default/system-i686-gnr-10.0
 portage_confdir: /data/gnr-tools/etc/portage
-portage_overlay: /data/gnr-overlay
+
+livecd/fsscript: /data/gnr-tools/catalyst-auto/releases/weekly/stage4.sh
 livecd/use:
     branding
     livecd
@@ -57,6 +58,3 @@ livecd/use:
     aspell
     -cdr
     -dvdr
-
-livecd/packages:
-    virtual/gentoo-netbook-remix

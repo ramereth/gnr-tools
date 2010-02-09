@@ -5,9 +5,9 @@ rel_type: default
 profile: default/linux/x86/10.0/desktop
 snapshot: 10.0
 portage_confdir: /data/gnr-tools/etc/portage
-portage_overlay: /data/gnr-overlay
 source_subpath: default/system-i686-gnr-10.0
 
+stage4/fsscript: /data/gnr-tools/catalyst-auto/releases/weekly/stage4.sh
 stage4/use:
     consolekit
     policykit
@@ -54,6 +54,3 @@ stage4/use:
     aspell
     -cdr
     -dvdr
-
-stage4/packages:
-    virtual/gentoo-netbook-remix
