@@ -5,7 +5,7 @@ rel_type: default
 profile: default/linux/x86/10.0/desktop
 snapshot: 10.0
 source_subpath: default/liveusb-stage1-i686-installer-10.0
-portage_confdir: /data/gnr-tools/etc/portage
+portage_confdir: /data/gnr-tools/catalyst-auto/releases/weekly/portage
 
 livecd/fsscript: /data/gnr-tools/catalyst-auto/releases/weekly/stage4.sh
 livecd/bootargs: dokeymap
@@ -78,6 +78,7 @@ boot/kernel/gentoo/use:
     aspell
     -cdr
     -dvdr
+    -cups
 
 boot/kernel/gentoo/packages:
     virtual/gentoo-netbook-remix 

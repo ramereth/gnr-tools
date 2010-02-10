@@ -2,7 +2,9 @@
 =app-admin/gnome-system-tools-2.22*
 =app-admin/system-config-printer-common-1.1*
 =app-admin/system-tools-backends-2.6*
-=app-text/fbreader-0.10*
+=app-text/fbreader-0.12*
+=dev-libs/eggdbus-0.6*
+=dev-libs/glib-2.22*
 =dev-libs/liblinebreak-1*
 =dev-libs/liboobs-2.22*
 =dev-perl/Net-DBus-0.33*
@@ -15,6 +17,8 @@
 =media-libs/clutter-1.0*
 =media-libs/clutter-gtk-0.10*
 =net-print/foomatic-gui-0.7*
+=sys-auth/consolekit-0.4*
+=sys-auth/polkit-0.96*
 =x11-apps/notify-osd-0.9*
 =x11-libs/libfakekey-0.1*
 =x11-libs/liblauncher-0.1*

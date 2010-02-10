@@ -1,17 +1,15 @@
 #!/bin/bash
 # Setup GNR stage4
+set -ex
 
-echo "Setup layman..."
-USE=-perl emerge -q dev-util/git app-portage/layman
-echo 'source /usr/portage/local/layman/layman.conf' >> /etc/make.conf
-layman -q -L
+emerge -q dev-util/git app-portage/layman
+echo 'source /usr/local/portage/layman/make.conf' >> /etc/make.conf
+layman -q -L &> /dev/null
 
-echo "Adding gnome overlay.."
 layman -a gnome
-echo "Adding gnr overlay.."
 layman -a gnr
 
-echo "Installing GNR.."
-emerge -q virtual/gentoo-netbook-remix
+# rebuild with +extras
+emerge -q sys-fs/udev
 
-echo "Done!"
+emerge -q virtual/gentoo-netbook-remix
