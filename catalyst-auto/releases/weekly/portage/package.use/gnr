@@ -5,3 +5,4 @@ net-misc/networkmanager dhcpcd resolvconf
 net-misc/vinagre -avahi
 dev-util/git -subversion -perl -gtk -tk
 sys-fs/udev extras
+app-text/fbreader -qt4 gtk
