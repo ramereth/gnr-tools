@@ -1,6 +1,6 @@
 dev-libs/DirectFB -sdl
 gnome-base/gnome-applets -apm
-net-dns/avahi -gtk
+net-dns/avahi -gtk mdnsresponder-compat
 net-misc/networkmanager dhcpcd resolvconf
 net-misc/vinagre -avahi
 dev-util/git -subversion -perl -gtk -tk
