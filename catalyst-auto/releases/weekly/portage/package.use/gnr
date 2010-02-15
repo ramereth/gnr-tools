@@ -1,8 +1,11 @@
+app-text/fbreader -qt4 gtk
 dev-libs/DirectFB -sdl
+dev-util/git -subversion -perl -gtk -tk
 gnome-base/gnome-applets -apm
 net-dns/avahi -gtk mdnsresponder-compat
+net-libs/opal sip
+net-libs/ptlib wav
 net-misc/networkmanager dhcpcd resolvconf
 net-misc/vinagre -avahi
-dev-util/git -subversion -perl -gtk -tk
 sys-fs/udev extras
-app-text/fbreader -qt4 gtk
+x11-base/xorg-server kdrive
