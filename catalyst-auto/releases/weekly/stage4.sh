@@ -18,6 +18,7 @@ emerge ${emerge_opts} sys-fs/udev
 emerge -q sys-kernel/gentoo-sources
 cp /root/kernel-config /usr/src/linux/.config
 
+emerge ${emerge_opts} -1 net-libs/libsoup-gnome
 emerge ${emerge_opts} virtual/gentoo-netbook-remix
 
 # remove kernel stuff
